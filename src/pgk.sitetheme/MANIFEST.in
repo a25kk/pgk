@@ -1,0 +1,2 @@
+graft pgk
+include *.cfg *.rst *.in

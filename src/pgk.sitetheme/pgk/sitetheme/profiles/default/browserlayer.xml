@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+    name="pgk.sitetheme"
+    interface="pgk.sitetheme.interfaces.IPgkSiteThemeLayer"
+  />
+</layers>
