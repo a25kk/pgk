@@ -6,7 +6,7 @@
 //== Colors
 //
 //## Brand colors used across the project
-$color-lochmara:               rgba(0, 122, 195, 1) !default; // #007ac3
+$color-plum:               rgba(147, 51, 137, 1) !default; // #933389
 
 $color-powderblue:              rgba(255, 1, 152, 1) !default; // #B0E0E6
 
@@ -23,10 +23,10 @@ $app-red:                       $color-firebrick !default;
 //## Used in mixin and modifier classes
 
 //** Primary brand color
-$app-primary-base:              $color-lochmara !default;
+$app-primary-base:              $color-plum !default;
 $app-primary-darker:            darken($app-primary-base, 15%)  !default;
 $app-primary-dark:              darken($app-primary-base, 7.5%) !default;
-$app-primary:                   $app-primary-base               !default; // #007ac3
+$app-primary:                   $app-primary-base               !default; // #933389
 $app-primary-light:             lighten($app-primary-base, 7.5%) !default;
 $app-primary-lighter:           lighten($app-primary-base, 15%) !default;
 

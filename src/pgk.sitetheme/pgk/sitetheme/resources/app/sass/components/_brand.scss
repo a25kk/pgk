@@ -70,24 +70,17 @@
 }
 
 .app-brandname {
+    margin-top: 0;
     display: block;
-    padding: 1rem 0;
-    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    font-size: .8rem;
     font-weight: 500;
     line-height: 1.25;
     color: #fff;
+    background: $app-primary;
     text-transform: uppercase;
-    .app-brand-panel-inverse & {
-        font-size: 1.25rem;
-        line-height: 1;
-        color: #fff;
-        @include media-breakpoint-up(md) {
-            flex: 0 0 75%;
-        }
-    }
     @include media-breakpoint-up(sm) {
-        font-size: 1.92rem;
-        padding: 2.5rem 0 2rem 0;
+        margin-top: 1rem;
     }
 }
 

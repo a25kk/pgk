@@ -1,5 +1,5 @@
 // Main site nav bar
-.app-nav-bar {
+.app-nav-bar {  
     position: relative;
     right: -140%;
     &--overlay {
@@ -19,7 +19,7 @@
         }
     }
     @include media-breakpoint-up(lg) {
-        display: block;
+        display: none;
         right: 0;
         min-height: 3rem;
         background: transparent;

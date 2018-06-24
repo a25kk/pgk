@@ -4,6 +4,14 @@
 //== Main content area
 //
 //## Provides optional fullscreen layouts
+
+.app-wrapper {
+  border: 1px solid $gray-300;
+  @include make-container();
+  @include make-container-max-widths();
+  background: #fff;
+}
+
 .app-main {
   @include make-container();
   @include make-container-max-widths();
@@ -22,16 +30,25 @@
 }
 
 //** Add full height to layout components
-.app-aside,
-.app-content-main {
-    @include make-col-ready();
-    @include make-col(12);
+//.app-aside,
+//.app-content-main {
+//    @include make-col-ready();
+//    @include make-col(12);
+//}
+
+.app-aside-left {
+    border: 1px solid red;
+    @include media-breakpoint-up(lg) {
+        @include make-col(3);
+        padding: 1rem;
+        display: block;
+    }
 }
 
-.app-aside {
-    display: none;
+.app-aside-right {
+    border: 1px solid green;
     @include media-breakpoint-up(lg) {
-        @include make-col(4);
+        @include make-col(3);
         padding: 1rem;
         display: block;
     }
@@ -39,12 +56,11 @@
 
 .app-content-main,
 .app-content--main {
+  border: 1px solid blue;
   padding: 0 1rem 0 1rem;
-  &-sm {
-    @include media-breakpoint-up(lg) {
-      @include make-col(8);
+  @include media-breakpoint-up(lg) {
+      @include make-col(6);
     }
-  }
 }
 
 .app-content-main-full {

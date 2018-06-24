@@ -6,22 +6,27 @@
   </head>
   <body>
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <div class="app-wrapper">
     {% include components/toolbar.html %}
     {% include layout/header.html %}
     {% include components/banner.html %}
     <main class="app-main" role="main">
         <section class="app-content">
-            <aside class="app-aside" id="app-aside">
+            <aside class="app-aside-left" id="app-aside-left">
                 {% include layout/sidebar.html %}
             </aside>
             <article class="app-content-main" id="app-content-main">
               {% include components/pathbar.html %}
                 {{ content }}
             </article>
+            <aside class="app-aside-right" id="app-aside-right">
+                <!--{% include layout/sidebar.html %}-->
+            </aside>
         </section>
     </main>
 
     {% include layout/footer.html %}
+  </div>
   </body>
 </html>
 

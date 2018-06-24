@@ -498,6 +498,10 @@
         <replace css:content-children="#portal-column-two > *"
             css:theme-children="#app-events" />
 
+        <!-- Event listing for Frontpage -->
+        <replace css:content-children="#portal-column-two > *"
+            css:theme-children="#app-aside-right" />
+
 
         <!-- Support cookie consent -->
         <after css:theme-children="#app-footer"
