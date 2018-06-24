@@ -1,0 +1,50 @@
+//
+// Callouts
+// --------------------------------------------------
+
+
+.app-callout {
+  @include make-container();
+  @include make-container-max-widths();
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  border-left: 5px solid #eee;
+  @include when-inside('.app-page-content') {
+    display: none;
+  }
+}
+
+
+
+// Common spacing and style resets
+.app-callout-title {
+  margin-top: 0;
+  margin-bottom: .25rem;
+}
+
+.app-callout p:last-child {
+  margin-bottom: 0;
+}
+
+// Custom button styles
+.app-callout-btn {
+  float: right;
+  margin-bottom: .5rem;
+}
+
+// Callout variants used as addon classes
+.app-callout-default {
+  @include alert-variant($gray-300, $gray-400, $green);
+}
+
+.app-callout-success {
+  @include alert-variant($green, $green, #fff);
+}
+
+.app-callout-danger {
+  @include alert-variant($red, $red, #fff);
+}
+
+.app-callout-warning {
+  @include alert-variant($yellow, $yellow, #fff);
+}

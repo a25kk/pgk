@@ -1,0 +1,76 @@
+//
+// Frontpage
+// -----------------------------------------
+
+.app-cards-section {
+	background: $gray-100;
+	padding: 2rem 1.5rem;
+	@include media-breakpoint-up(md) {
+		padding: 1rem;
+	}
+}
+
+.app-front-page-cards {
+	@include make-container();
+  	@include make-container-max-widths();
+  	margin-bottom: 2rem;
+  	padding-left: 10px;
+  	padding-right: 10px;
+}
+
+//== Teaser box component
+// Front page teasers aligned in a pseudo random order
+.teaser-box {
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+//## Element sizing
+// Editable sizes based on display behavior
+.teaser-box--75 {
+	@include media-breakpoint-up(md) {
+		width: 75%;
+	}
+}
+.teaser-box--66 {
+	@include media-breakpoint-up(md) {
+		width: 66.6666%;
+	}
+}
+.teaser-box--50 {
+    @include media-breakpoint-up(md) {
+		width: 50%;
+	}
+}
+.teaser-box--33 {
+    @include media-breakpoint-up(md) {
+		width: 33.3333%;
+	}
+}
+.teaser-box--25 {
+    @include media-breakpoint-up(md) {
+		width: 25%;
+	}
+}
+
+// Teaser title
+
+.teaser-box__header {
+	margin-top: 1rem;
+	font-size: 12px;
+}
+.teaser-box__title {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.teaser-box__link {
+	&:hover {
+		transition: all 0.5s ease;
+        filter: grayscale(100%);
+	}
+}
+
+.teaser-box__section {
+	font-size: 12px;
+}

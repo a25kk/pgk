@@ -1,0 +1,126 @@
+//
+// Header
+// ------------------------------------------
+
+
+.app-header {
+    position: relative;
+    overflow: hidden;
+	background: linear-gradient(to bottom, rgba(1, 122, 195, 1) 0%, rgba(187, 217, 240, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#017ac3', endColorstr='#bbd9f0',GradientType=0 );
+  	@include media-breakpoint-up(md) {
+        background: url(../assets/images/top.svg) no-repeat top center transparent;
+      	margin-bottom: 1rem;
+  	}
+}
+
+.app-header__content {
+  	//@include make-container();
+  	//@include make-container-max-widths();
+}
+
+.app-header__wrapper {
+}
+
+.app-header__section {
+    @include make-container();
+    @include make-container-max-widths();
+    padding-left: 2rem;
+    padding-right:2rem;
+    text-align: left;
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+        padding-left: 1rem;
+        padding-right:1rem;
+        }
+
+    &--burger {
+        text-align: right;
+        // TODO: remove when switching implementation to default
+        display: block;
+        //padding-top: 1rem;
+        margin-bottom: 1rem;
+        color: #fff;
+        //margin-left: 1rem;
+        //margin-right: 1rem;
+        //padding-right: 1rem;
+        //padding-bottom: 1rem;
+        text-transform: uppercase;
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+    }
+}
+
+.app-header__navsection {
+	
+}
+
+.app-header-panels {
+	@include make-row();
+	margin-right: 0;
+	margin-left: 0;
+    flex-wrap: wrap;
+}
+
+.app-header-panel {
+    @include when-inside('.no-flexbox') {
+        display: table-cell;
+    }
+    &.app-header-brandbar {
+        text-align: right;
+        @include make-col(12);
+        //@include media-breakpoint-up(md) {
+        //    @include make-col(4);
+        //}
+
+    }
+
+    &.app-header-bannerbar {
+        @include media-breakpoint-up(md) {
+            display: block;
+            @include make-col(8);
+            @include when-inside('.template-frontpage-view') {
+                @include make-col(8);
+            }
+        }
+    }
+
+    &.app-header-navbar {
+        width: 100%;
+        @include make-col(12);
+        @include when-inside('.template-login_form') {
+            display: none;
+        }
+        @include when-inside('.template-logged_out') {
+            display: none;
+        }
+        @include when-inside('.template-login_failed') {
+            display: none;
+        }
+    }
+}
+
+.app-claim-wrapper {
+    @include make-row();
+    margin-right: 0;
+    margin-left: 0;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.app-claim-item-left {
+    @include make-col(12);
+    @include media-breakpoint-up(md) {
+        @include make-col(7);
+        color: $app-primary;
+    }
+}
+
+.app-claim-item-right {
+    @include make-col(12);
+    @include media-breakpoint-up(md) {
+        @include make-col(5);
+        text-align: right;
+    }
+}

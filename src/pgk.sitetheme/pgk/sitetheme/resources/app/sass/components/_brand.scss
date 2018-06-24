@@ -1,0 +1,101 @@
+//
+// Brand
+// -----------------------------------------
+
+
+// Make a gridrow
+.app-brand {
+    display: flex;
+    // align-items: center;
+    //margin-right: $spacer;
+    &-panel-inverse {
+        width: 100%;
+    }
+
+}
+
+//** Inline svg logo
+.app-brand-img {
+    display: block;
+    width: 100%;
+    &-xs {
+        width: 64px;
+    }
+    &-sm {
+        width: 64px;
+    }
+    &-md {
+        width: 128px;
+    }
+    &-lg {
+        width: 272.576px
+    }
+}
+
+// Wrapper for logo SVG inline elements
+.app-brandname-logo {
+    position: relative;
+    margin: 1rem auto;
+    top: 0;
+    height: 5rem;
+    width: 5rem;
+    padding: 0;
+
+    @include when-inside('.template-frontpage-view') {
+        @include media-breakpoint-up(sm) {
+            margin: 5rem auto;
+            height: 15rem;
+            width: 15rem;
+        }
+    }
+}
+
+// SVG inline element
+.app-logo-svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    //height: 100%;
+    width: 100%;
+}
+
+.app-brandname-logo-image {
+    @extend .img-fluid;
+}
+
+
+// The actual brandname/title
+.app-brand-title {
+    //@include make-md-column(8);
+}
+
+.app-brandname {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #fff;
+    text-transform: uppercase;
+    .app-brand-panel-inverse & {
+        font-size: 1.25rem;
+        line-height: 1;
+        color: #fff;
+        @include media-breakpoint-up(md) {
+            flex: 0 0 75%;
+        }
+    }
+    @include media-breakpoint-up(sm) {
+        font-size: 1.92rem;
+        padding: 2.5rem 0 2rem 0;
+    }
+}
+
+// Sitewide claim
+.app-brand-aside {
+    @include make-col(4);
+}
+
+.app-logo-mobile {
+    padding: $spacer $spacer 0 $spacer;
+}
