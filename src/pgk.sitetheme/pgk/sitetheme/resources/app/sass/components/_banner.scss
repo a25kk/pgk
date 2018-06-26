@@ -5,12 +5,12 @@
 //** Fullscreen container bar
 .app-bannerbar {
     padding-top: 0;
-    display: none;
-    background: url(../assets/images/static.jpg) repeat-x center center $app-primary;
+    @include make-row();
+    background: url(../assets/images/gradient.png) repeat-x top center transparent;
     height: 179px;
-    @include media-breakpoint-up(md) {
-        display: block;
-    }
+    //@include media-breakpoint-up(md) {
+    //    display: block;
+    //}
 }
 
 .app-banner {

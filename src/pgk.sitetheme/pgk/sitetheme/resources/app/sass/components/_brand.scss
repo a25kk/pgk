@@ -2,15 +2,19 @@
 // Brand
 // -----------------------------------------
 
+.app-brandbar-content {
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+    padding-top: .5rem;
+    padding-bottom: .3rem;
+}
 
 // Make a gridrow
 .app-brand {
-    display: flex;
-    // align-items: center;
-    //margin-right: $spacer;
-    &-panel-inverse {
-        width: 100%;
-    }
+    padding-top: 0;
+    @include make-row();
+    background: url(../assets/images/gradient.png) repeat-x top center transparent;
+    height: 179px;
 
 }
 
@@ -34,28 +38,17 @@
 
 // Wrapper for logo SVG inline elements
 .app-brandname-logo {
-    position: relative;
-    margin: 1rem auto;
-    top: 0;
-    height: 5rem;
-    width: 5rem;
+    //position: relative;
+    width: 100%;
     padding: 0;
-
-    @include when-inside('.template-frontpage-view') {
-        @include media-breakpoint-up(sm) {
-            margin: 5rem auto;
-            height: 15rem;
-            width: 15rem;
-        }
-    }
 }
 
 // SVG inline element
 .app-logo-svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    //height: 100%;
+    //position: absolute;
+    //left: 0;
+    //top: 0;
+    padding: 2rem;
     width: 100%;
 }
 
@@ -66,7 +59,10 @@
 
 // The actual brandname/title
 .app-brand-title {
-    //@include make-md-column(8);
+    @include make-col(12);
+    @include media-breakpoint-up(md) {
+    @include make-col(4);
+    }
 }
 
 .app-brandname {
@@ -77,8 +73,9 @@
     font-weight: 500;
     line-height: 1.25;
     color: #fff;
-    background: $app-primary;
     text-transform: uppercase;
+    background: $app-primary;
+    margin-bottom: 1rem;
     @include media-breakpoint-up(sm) {
         margin-top: 1rem;
     }
@@ -86,9 +83,10 @@
 
 // Sitewide claim
 .app-brand-aside {
-    @include make-col(4);
-}
-
-.app-logo-mobile {
-    padding: $spacer $spacer 0 $spacer;
-}
+    display: none;
+    @include media-breakpoint-up(md) {
+        display: block;
+        @include make-col(8);
+        background: url(../assets/images/banner.jpg) no-repeat right top transparent;
+        }
+    }

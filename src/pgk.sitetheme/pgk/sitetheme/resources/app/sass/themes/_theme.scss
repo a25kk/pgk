@@ -15,10 +15,10 @@
 .app-main {
   @include make-container();
   @include make-container-max-widths();
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  //padding-left: 2rem;
+  //padding-right: 2rem;
+  //padding-top: 2rem;
+  padding-bottom: 1rem;
   @include media-breakpoint-up(md) {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -37,26 +37,27 @@
 //}
 
 .app-aside-left {
-    border: 1px solid red;
+    display: none;
+    //border: 1px solid red;
     @include media-breakpoint-up(lg) {
         @include make-col(3);
-        padding: 1rem;
+        //padding: 1rem;
         display: block;
     }
 }
 
 .app-aside-right {
-    border: 1px solid green;
+    //border: 1px solid green;
     @include media-breakpoint-up(lg) {
         @include make-col(3);
-        padding: 1rem;
+        //padding: 1rem;
         display: block;
     }
 }
 
 .app-content-main,
 .app-content--main {
-  border: 1px solid blue;
+  //border: 1px solid blue;
   padding: 0 1rem 0 1rem;
   @include media-breakpoint-up(lg) {
       @include make-col(6);
