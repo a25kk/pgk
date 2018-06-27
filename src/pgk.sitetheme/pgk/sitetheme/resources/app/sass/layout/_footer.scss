@@ -4,61 +4,29 @@
 
 
 .app-footer__content {
-    color: #000;
-    background: linear-gradient(to bottom, rgba(1, 122, 195, 1) 0%, rgba(187, 217, 240, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#017ac3', endColorstr='#bbd9f0',GradientType=0 );
-}
-
-.app-footer-cards-wrapper {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    @include make-container();
-	@include make-container-max-widths();
-}
-
-.app-footer-cards {
-    @include make-row();
-    margin-right: -15px;
-    margin-left: -15px;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    flex-wrap: wrap;
-}
-
-.app-footer-card {
-    @include make-col(12);
-    @include media-breakpoint-up(md) {
-    @include make-col(4);
-    }
-    padding: .5rem;
-    h3 {
-        color: #fff;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-    }
-    a {
-        color: #fff;
-    }
+    color: #fff;
+    background: $app-primary;
+    margin-bottom: 1rem;
 }
 
 .app-copyright-wrapper {
     @include make-container();
 	@include make-container-max-widths();
-    background: #fff;
 }
 
 .app-copyright {
     font-weight: 500;
     @include make-row();
-    //margin-right: -15px;
-    //margin-left: -15px;
-    padding: 2rem 1.5rem;
+    padding: .5rem 1rem;
     flex-wrap: wrap;
     text-transform: uppercase;
+    font-size: .8rem;
+    a {
+        color: #fff;
+    }
 }
 
 .app-copyright-signature {
-    //max-width: 50%;
     text-align: left;
     @include make-col(12);
     @include media-breakpoint-up(md) {
@@ -67,7 +35,6 @@
 }
 
 .app-copyright-info {
-    //max-width: 50%;
     text-align: right;
     @include make-col(12);
     @include media-breakpoint-up(md) {

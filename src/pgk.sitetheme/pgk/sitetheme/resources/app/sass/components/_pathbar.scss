@@ -19,7 +19,9 @@
     font-size: $font-size-sm;
     border-radius: 0;
     background-color: transparent;
-    padding: 1rem 0;
+    .app-breadcrumbs {
+        padding: 1rem 0;
+    }
     .breadcrumb {
         background-color: transparent;
         margin-bottom: 0;

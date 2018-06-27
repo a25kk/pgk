@@ -12741,82 +12741,9 @@ iframe {
 }
 
 .app-footer__content {
-  color: #000;
-  background: linear-gradient(to bottom, #017ac3 0%, #bbd9f0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#017ac3', endColorstr='#bbd9f0',GradientType=0 );
-}
-
-.app-footer-cards-wrapper {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .app-footer-cards-wrapper {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .app-footer-cards-wrapper {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .app-footer-cards-wrapper {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .app-footer-cards-wrapper {
-    max-width: 1140px;
-  }
-}
-
-.app-footer-cards {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-left: -15px;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  flex-wrap: wrap;
-}
-
-.app-footer-card {
-  -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-  max-width: 100%;
-  padding: .5rem;
-}
-
-@media (min-width: 768px) {
-  .app-footer-card {
-    -ms-flex: 0 0 33.3333333333%;
-        flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-  }
-}
-
-.app-footer-card h3 {
   color: #fff;
-  font-size: 1.2rem;
+  background: #933389;
   margin-bottom: 1rem;
-}
-
-.app-footer-card a {
-  color: #fff;
 }
 
 .app-copyright-wrapper {
@@ -12825,7 +12752,6 @@ iframe {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  background: #fff;
 }
 
 @media (min-width: 576px) {
@@ -12860,9 +12786,14 @@ iframe {
       flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  padding: 2rem 1.5rem;
+  padding: .5rem 1rem;
   flex-wrap: wrap;
   text-transform: uppercase;
+  font-size: .8rem;
+}
+
+.app-copyright a {
+  color: #fff;
 }
 
 .app-copyright-signature {
@@ -13945,7 +13876,6 @@ img[data-sizes="auto"] {
   font-size: 0.875rem;
   border-radius: 0;
   background-color: transparent;
-  padding: 1rem 0;
 }
 
 .template-search .app-pathbar {
@@ -13960,6 +13890,10 @@ img[data-sizes="auto"] {
   .app-pathbar {
     display: block;
   }
+}
+
+.app-pathbar .app-breadcrumbs {
+  padding: 1rem 0;
 }
 
 .app-pathbar .breadcrumb {
@@ -15357,9 +15291,9 @@ img[data-sizes="auto"] {
 .app-page-title,
 .app-page__headline,
 .app-page-headline {
+  text-transform: uppercase;
   font-size: 1.5rem;
   color: #933389;
-  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 

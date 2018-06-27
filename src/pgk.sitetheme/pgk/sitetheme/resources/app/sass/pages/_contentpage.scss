@@ -20,9 +20,9 @@
 .app-page-title,
 .app-page__headline,
 .app-page-headline, {
+    text-transform: uppercase;
     font-size: 1.5rem;
     color: $app-primary;
-    margin-top: 1rem;
     margin-bottom: 2rem;
     @include media-breakpoint-up(md) {
     font-size: 1.8rem;
