@@ -30,16 +30,18 @@
 @import 'components/brand';
 @import 'components/nav-bar';
 @import 'components/navlist';
-@import 'components/actionbar';
+//@import 'components/actionbar';
 @import 'components/banner';
 @import 'components/gallery';
 @import 'components/callouts';
+@import 'components/portlets';
 
 @import 'pages/frontpage';
 @import 'pages/signin';
 @import 'pages/contentpage';
 @import 'pages/controlpanel';
 @import 'pages/events';
+@import 'pages/search';
 
 @import 'themes/theme';
 

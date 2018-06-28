@@ -6438,7 +6438,7 @@ input[type="email"],
 input[type="url"],
 input[type="search"],
 input[type="tel"],
-input[type="color"], .app-searchbox-field {
+input[type="color"] {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -6468,7 +6468,7 @@ input[type="color"], .app-searchbox-field {
   input[type="url"],
   input[type="search"],
   input[type="tel"],
-  input[type="color"], .app-searchbox-field {
+  input[type="color"] {
     transition: none;
   }
 }
@@ -6488,7 +6488,7 @@ input[type="email"]::-ms-expand,
 input[type="url"]::-ms-expand,
 input[type="search"]::-ms-expand,
 input[type="tel"]::-ms-expand,
-input[type="color"]::-ms-expand, .app-searchbox-field::-ms-expand {
+input[type="color"]::-ms-expand {
   background-color: transparent;
   border: 0;
 }
@@ -6508,7 +6508,7 @@ input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
-input[type="color"]:focus, .app-searchbox-field:focus {
+input[type="color"]:focus {
   color: #495057;
   background-color: #fff;
   border-color: #80bdff;
@@ -6531,7 +6531,7 @@ input[type="email"]::-webkit-input-placeholder,
 input[type="url"]::-webkit-input-placeholder,
 input[type="search"]::-webkit-input-placeholder,
 input[type="tel"]::-webkit-input-placeholder,
-input[type="color"]::-webkit-input-placeholder, .app-searchbox-field::-webkit-input-placeholder {
+input[type="color"]::-webkit-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
@@ -6551,7 +6551,7 @@ input[type="email"]:-ms-input-placeholder,
 input[type="url"]:-ms-input-placeholder,
 input[type="search"]:-ms-input-placeholder,
 input[type="tel"]:-ms-input-placeholder,
-input[type="color"]:-ms-input-placeholder, .app-searchbox-field:-ms-input-placeholder {
+input[type="color"]:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
@@ -6571,7 +6571,7 @@ input[type="email"]::placeholder,
 input[type="url"]::placeholder,
 input[type="search"]::placeholder,
 input[type="tel"]::placeholder,
-input[type="color"]::placeholder, .app-searchbox-field::placeholder {
+input[type="color"]::placeholder {
   color: #6c757d;
   opacity: 1;
 }
@@ -6591,7 +6591,7 @@ input[type="email"]:disabled,
 input[type="url"]:disabled,
 input[type="search"]:disabled,
 input[type="tel"]:disabled,
-input[type="color"]:disabled, .app-searchbox-field:disabled, .form-control[readonly], select[readonly],
+input[type="color"]:disabled, .form-control[readonly], select[readonly],
 textarea[readonly],
 input[readonly][type="text"],
 input[readonly][type="password"],
@@ -6606,7 +6606,7 @@ input[readonly][type="email"],
 input[readonly][type="url"],
 input[readonly][type="search"],
 input[readonly][type="tel"],
-input[readonly][type="color"], [readonly].app-searchbox-field {
+input[readonly][type="color"] {
   background-color: #e9ecef;
   opacity: 1;
 }
@@ -6676,7 +6676,7 @@ input.form-control-plaintext[type="email"], .input-group-sm >
 input.form-control-plaintext[type="url"], .input-group-sm >
 input.form-control-plaintext[type="search"], .input-group-sm >
 input.form-control-plaintext[type="tel"], .input-group-sm >
-input.form-control-plaintext[type="color"], .input-group-sm > .form-control-plaintext.app-searchbox-field,
+input.form-control-plaintext[type="color"],
 .input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-prepend > .form-control-plaintext.btn,
@@ -6695,7 +6695,7 @@ input.form-control-plaintext[type="email"], .input-group-lg >
 input.form-control-plaintext[type="url"], .input-group-lg >
 input.form-control-plaintext[type="search"], .input-group-lg >
 input.form-control-plaintext[type="tel"], .input-group-lg >
-input.form-control-plaintext[type="color"], .input-group-lg > .form-control-plaintext.app-searchbox-field,
+input.form-control-plaintext[type="color"],
 .input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.btn,
@@ -6719,7 +6719,7 @@ input[type="email"], .input-group-sm >
 input[type="url"], .input-group-sm >
 input[type="search"], .input-group-sm >
 input[type="tel"], .input-group-sm >
-input[type="color"], .input-group-sm > .app-searchbox-field,
+input[type="color"],
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
@@ -6752,7 +6752,7 @@ input[type="email"], .input-group-lg >
 input[type="url"], .input-group-lg >
 input[type="search"], .input-group-lg >
 input[type="tel"], .input-group-lg >
-input[type="color"], .input-group-lg > .app-searchbox-field,
+input[type="color"],
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
@@ -6868,7 +6868,7 @@ input[type="email"]:valid, .was-validated
 input[type="url"]:valid, .was-validated
 input[type="search"]:valid, .was-validated
 input[type="tel"]:valid, .was-validated
-input[type="color"]:valid, .was-validated .app-searchbox-field:valid, .form-control.is-valid, select.is-valid,
+input[type="color"]:valid, .form-control.is-valid, select.is-valid,
 textarea.is-valid,
 input.is-valid[type="text"],
 input.is-valid[type="password"],
@@ -6883,7 +6883,7 @@ input.is-valid[type="email"],
 input.is-valid[type="url"],
 input.is-valid[type="search"],
 input.is-valid[type="tel"],
-input.is-valid[type="color"], .is-valid.app-searchbox-field, .was-validated
+input.is-valid[type="color"], .was-validated
 .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745;
@@ -6904,7 +6904,7 @@ input[type="email"]:valid:focus, .was-validated
 input[type="url"]:valid:focus, .was-validated
 input[type="search"]:valid:focus, .was-validated
 input[type="tel"]:valid:focus, .was-validated
-input[type="color"]:valid:focus, .was-validated .app-searchbox-field:valid:focus, .form-control.is-valid:focus, select.is-valid:focus,
+input[type="color"]:valid:focus, .form-control.is-valid:focus, select.is-valid:focus,
 textarea.is-valid:focus,
 input.is-valid[type="text"]:focus,
 input.is-valid[type="password"]:focus,
@@ -6919,7 +6919,7 @@ input.is-valid[type="email"]:focus,
 input.is-valid[type="url"]:focus,
 input.is-valid[type="search"]:focus,
 input.is-valid[type="tel"]:focus,
-input.is-valid[type="color"]:focus, .is-valid.app-searchbox-field:focus, .was-validated
+input.is-valid[type="color"]:focus, .was-validated
 .custom-select:valid:focus,
 .custom-select.is-valid:focus {
   border-color: #28a745;
@@ -6941,7 +6941,7 @@ input[type="email"]:valid ~ .valid-feedback, .was-validated
 input[type="url"]:valid ~ .valid-feedback, .was-validated
 input[type="search"]:valid ~ .valid-feedback, .was-validated
 input[type="tel"]:valid ~ .valid-feedback, .was-validated
-input[type="color"]:valid ~ .valid-feedback, .was-validated .app-searchbox-field:valid ~ .valid-feedback,
+input[type="color"]:valid ~ .valid-feedback,
 .was-validated .form-control:valid ~ .valid-tooltip,
 .was-validated select:valid ~ .valid-tooltip,
 .was-validated
@@ -6973,8 +6973,7 @@ input[type="search"]:valid ~ .valid-tooltip,
 .was-validated
 input[type="tel"]:valid ~ .valid-tooltip,
 .was-validated
-input[type="color"]:valid ~ .valid-tooltip,
-.was-validated .app-searchbox-field:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, select.is-valid ~ .valid-feedback,
+input[type="color"]:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, select.is-valid ~ .valid-feedback,
 textarea.is-valid ~ .valid-feedback,
 input.is-valid[type="text"] ~ .valid-feedback,
 input.is-valid[type="password"] ~ .valid-feedback,
@@ -6989,7 +6988,7 @@ input.is-valid[type="email"] ~ .valid-feedback,
 input.is-valid[type="url"] ~ .valid-feedback,
 input.is-valid[type="search"] ~ .valid-feedback,
 input.is-valid[type="tel"] ~ .valid-feedback,
-input.is-valid[type="color"] ~ .valid-feedback, .is-valid.app-searchbox-field ~ .valid-feedback,
+input.is-valid[type="color"] ~ .valid-feedback,
 .form-control.is-valid ~ .valid-tooltip, select.is-valid ~ .valid-tooltip,
 textarea.is-valid ~ .valid-tooltip,
 input.is-valid[type="text"] ~ .valid-tooltip,
@@ -7005,7 +7004,7 @@ input.is-valid[type="email"] ~ .valid-tooltip,
 input.is-valid[type="url"] ~ .valid-tooltip,
 input.is-valid[type="search"] ~ .valid-tooltip,
 input.is-valid[type="tel"] ~ .valid-tooltip,
-input.is-valid[type="color"] ~ .valid-tooltip, .is-valid.app-searchbox-field ~ .valid-tooltip, .was-validated
+input.is-valid[type="color"] ~ .valid-tooltip, .was-validated
 .custom-select:valid ~ .valid-feedback,
 .was-validated
 .custom-select:valid ~ .valid-tooltip,
@@ -7108,7 +7107,7 @@ input[type="email"]:invalid, .was-validated
 input[type="url"]:invalid, .was-validated
 input[type="search"]:invalid, .was-validated
 input[type="tel"]:invalid, .was-validated
-input[type="color"]:invalid, .was-validated .app-searchbox-field:invalid, .form-control.is-invalid, select.is-invalid,
+input[type="color"]:invalid, .form-control.is-invalid, select.is-invalid,
 textarea.is-invalid,
 input.is-invalid[type="text"],
 input.is-invalid[type="password"],
@@ -7123,7 +7122,7 @@ input.is-invalid[type="email"],
 input.is-invalid[type="url"],
 input.is-invalid[type="search"],
 input.is-invalid[type="tel"],
-input.is-invalid[type="color"], .is-invalid.app-searchbox-field, .was-validated
+input.is-invalid[type="color"], .was-validated
 .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #dc3545;
@@ -7144,7 +7143,7 @@ input[type="email"]:invalid:focus, .was-validated
 input[type="url"]:invalid:focus, .was-validated
 input[type="search"]:invalid:focus, .was-validated
 input[type="tel"]:invalid:focus, .was-validated
-input[type="color"]:invalid:focus, .was-validated .app-searchbox-field:invalid:focus, .form-control.is-invalid:focus, select.is-invalid:focus,
+input[type="color"]:invalid:focus, .form-control.is-invalid:focus, select.is-invalid:focus,
 textarea.is-invalid:focus,
 input.is-invalid[type="text"]:focus,
 input.is-invalid[type="password"]:focus,
@@ -7159,7 +7158,7 @@ input.is-invalid[type="email"]:focus,
 input.is-invalid[type="url"]:focus,
 input.is-invalid[type="search"]:focus,
 input.is-invalid[type="tel"]:focus,
-input.is-invalid[type="color"]:focus, .is-invalid.app-searchbox-field:focus, .was-validated
+input.is-invalid[type="color"]:focus, .was-validated
 .custom-select:invalid:focus,
 .custom-select.is-invalid:focus {
   border-color: #dc3545;
@@ -7181,7 +7180,7 @@ input[type="email"]:invalid ~ .invalid-feedback, .was-validated
 input[type="url"]:invalid ~ .invalid-feedback, .was-validated
 input[type="search"]:invalid ~ .invalid-feedback, .was-validated
 input[type="tel"]:invalid ~ .invalid-feedback, .was-validated
-input[type="color"]:invalid ~ .invalid-feedback, .was-validated .app-searchbox-field:invalid ~ .invalid-feedback,
+input[type="color"]:invalid ~ .invalid-feedback,
 .was-validated .form-control:invalid ~ .invalid-tooltip,
 .was-validated select:invalid ~ .invalid-tooltip,
 .was-validated
@@ -7213,8 +7212,7 @@ input[type="search"]:invalid ~ .invalid-tooltip,
 .was-validated
 input[type="tel"]:invalid ~ .invalid-tooltip,
 .was-validated
-input[type="color"]:invalid ~ .invalid-tooltip,
-.was-validated .app-searchbox-field:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, select.is-invalid ~ .invalid-feedback,
+input[type="color"]:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, select.is-invalid ~ .invalid-feedback,
 textarea.is-invalid ~ .invalid-feedback,
 input.is-invalid[type="text"] ~ .invalid-feedback,
 input.is-invalid[type="password"] ~ .invalid-feedback,
@@ -7229,7 +7227,7 @@ input.is-invalid[type="email"] ~ .invalid-feedback,
 input.is-invalid[type="url"] ~ .invalid-feedback,
 input.is-invalid[type="search"] ~ .invalid-feedback,
 input.is-invalid[type="tel"] ~ .invalid-feedback,
-input.is-invalid[type="color"] ~ .invalid-feedback, .is-invalid.app-searchbox-field ~ .invalid-feedback,
+input.is-invalid[type="color"] ~ .invalid-feedback,
 .form-control.is-invalid ~ .invalid-tooltip, select.is-invalid ~ .invalid-tooltip,
 textarea.is-invalid ~ .invalid-tooltip,
 input.is-invalid[type="text"] ~ .invalid-tooltip,
@@ -7245,7 +7243,7 @@ input.is-invalid[type="email"] ~ .invalid-tooltip,
 input.is-invalid[type="url"] ~ .invalid-tooltip,
 input.is-invalid[type="search"] ~ .invalid-tooltip,
 input.is-invalid[type="tel"] ~ .invalid-tooltip,
-input.is-invalid[type="color"] ~ .invalid-tooltip, .is-invalid.app-searchbox-field ~ .invalid-tooltip, .was-validated
+input.is-invalid[type="color"] ~ .invalid-tooltip, .was-validated
 .custom-select:invalid ~ .invalid-feedback,
 .was-validated
 .custom-select:invalid ~ .invalid-tooltip,
@@ -7359,7 +7357,7 @@ input.is-invalid[type="color"] ~ .invalid-tooltip, .is-invalid.app-searchbox-fie
   input[type="url"], .form-inline
   input[type="search"], .form-inline
   input[type="tel"], .form-inline
-  input[type="color"], .form-inline .app-searchbox-field {
+  input[type="color"] {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -7878,7 +7876,7 @@ input[type="email"], .input-group >
 input[type="url"], .input-group >
 input[type="search"], .input-group >
 input[type="tel"], .input-group >
-input[type="color"], .input-group > .app-searchbox-field,
+input[type="color"],
 .input-group > .custom-select,
 .input-group > .custom-file {
   position: relative;
@@ -7903,7 +7901,7 @@ input[type="email"] + .form-control, .input-group >
 input[type="url"] + .form-control, .input-group >
 input[type="search"] + .form-control, .input-group >
 input[type="tel"] + .form-control, .input-group >
-input[type="color"] + .form-control, .input-group > .app-searchbox-field + .form-control, .input-group > .form-control + select, .input-group > select + select, .input-group >
+input[type="color"] + .form-control, .input-group > .form-control + select, .input-group > select + select, .input-group >
 textarea + select, .input-group >
 input[type="text"] + select, .input-group >
 input[type="password"] + select, .input-group >
@@ -7918,7 +7916,7 @@ input[type="email"] + select, .input-group >
 input[type="url"] + select, .input-group >
 input[type="search"] + select, .input-group >
 input[type="tel"] + select, .input-group >
-input[type="color"] + select, .input-group > .app-searchbox-field + select, .input-group > .form-control +
+input[type="color"] + select, .input-group > .form-control +
 textarea, .input-group > select +
 textarea, .input-group >
 textarea +
@@ -7950,7 +7948,6 @@ textarea, .input-group >
 input[type="tel"] +
 textarea, .input-group >
 input[type="color"] +
-textarea, .input-group > .app-searchbox-field +
 textarea, .input-group > .form-control +
 input[type="text"], .input-group > select +
 input[type="text"], .input-group >
@@ -7983,7 +7980,6 @@ input[type="text"], .input-group >
 input[type="tel"] +
 input[type="text"], .input-group >
 input[type="color"] +
-input[type="text"], .input-group > .app-searchbox-field +
 input[type="text"], .input-group > .form-control +
 input[type="password"], .input-group > select +
 input[type="password"], .input-group >
@@ -8016,7 +8012,6 @@ input[type="password"], .input-group >
 input[type="tel"] +
 input[type="password"], .input-group >
 input[type="color"] +
-input[type="password"], .input-group > .app-searchbox-field +
 input[type="password"], .input-group > .form-control +
 input[type="datetime"], .input-group > select +
 input[type="datetime"], .input-group >
@@ -8049,7 +8044,6 @@ input[type="datetime"], .input-group >
 input[type="tel"] +
 input[type="datetime"], .input-group >
 input[type="color"] +
-input[type="datetime"], .input-group > .app-searchbox-field +
 input[type="datetime"], .input-group > .form-control +
 input[type="datetime-local"], .input-group > select +
 input[type="datetime-local"], .input-group >
@@ -8082,7 +8076,6 @@ input[type="datetime-local"], .input-group >
 input[type="tel"] +
 input[type="datetime-local"], .input-group >
 input[type="color"] +
-input[type="datetime-local"], .input-group > .app-searchbox-field +
 input[type="datetime-local"], .input-group > .form-control +
 input[type="date"], .input-group > select +
 input[type="date"], .input-group >
@@ -8115,7 +8108,6 @@ input[type="date"], .input-group >
 input[type="tel"] +
 input[type="date"], .input-group >
 input[type="color"] +
-input[type="date"], .input-group > .app-searchbox-field +
 input[type="date"], .input-group > .form-control +
 input[type="month"], .input-group > select +
 input[type="month"], .input-group >
@@ -8148,7 +8140,6 @@ input[type="month"], .input-group >
 input[type="tel"] +
 input[type="month"], .input-group >
 input[type="color"] +
-input[type="month"], .input-group > .app-searchbox-field +
 input[type="month"], .input-group > .form-control +
 input[type="time"], .input-group > select +
 input[type="time"], .input-group >
@@ -8181,7 +8172,6 @@ input[type="time"], .input-group >
 input[type="tel"] +
 input[type="time"], .input-group >
 input[type="color"] +
-input[type="time"], .input-group > .app-searchbox-field +
 input[type="time"], .input-group > .form-control +
 input[type="week"], .input-group > select +
 input[type="week"], .input-group >
@@ -8214,7 +8204,6 @@ input[type="week"], .input-group >
 input[type="tel"] +
 input[type="week"], .input-group >
 input[type="color"] +
-input[type="week"], .input-group > .app-searchbox-field +
 input[type="week"], .input-group > .form-control +
 input[type="number"], .input-group > select +
 input[type="number"], .input-group >
@@ -8247,7 +8236,6 @@ input[type="number"], .input-group >
 input[type="tel"] +
 input[type="number"], .input-group >
 input[type="color"] +
-input[type="number"], .input-group > .app-searchbox-field +
 input[type="number"], .input-group > .form-control +
 input[type="email"], .input-group > select +
 input[type="email"], .input-group >
@@ -8280,7 +8268,6 @@ input[type="email"], .input-group >
 input[type="tel"] +
 input[type="email"], .input-group >
 input[type="color"] +
-input[type="email"], .input-group > .app-searchbox-field +
 input[type="email"], .input-group > .form-control +
 input[type="url"], .input-group > select +
 input[type="url"], .input-group >
@@ -8313,7 +8300,6 @@ input[type="url"], .input-group >
 input[type="tel"] +
 input[type="url"], .input-group >
 input[type="color"] +
-input[type="url"], .input-group > .app-searchbox-field +
 input[type="url"], .input-group > .form-control +
 input[type="search"], .input-group > select +
 input[type="search"], .input-group >
@@ -8346,7 +8332,6 @@ input[type="search"], .input-group >
 input[type="tel"] +
 input[type="search"], .input-group >
 input[type="color"] +
-input[type="search"], .input-group > .app-searchbox-field +
 input[type="search"], .input-group > .form-control +
 input[type="tel"], .input-group > select +
 input[type="tel"], .input-group >
@@ -8379,7 +8364,6 @@ input[type="tel"], .input-group >
 input[type="tel"] +
 input[type="tel"], .input-group >
 input[type="color"] +
-input[type="tel"], .input-group > .app-searchbox-field +
 input[type="tel"], .input-group > .form-control +
 input[type="color"], .input-group > select +
 input[type="color"], .input-group >
@@ -8412,23 +8396,7 @@ input[type="color"], .input-group >
 input[type="tel"] +
 input[type="color"], .input-group >
 input[type="color"] +
-input[type="color"], .input-group > .app-searchbox-field +
-input[type="color"], .input-group > .form-control + .app-searchbox-field, .input-group > select + .app-searchbox-field, .input-group >
-textarea + .app-searchbox-field, .input-group >
-input[type="text"] + .app-searchbox-field, .input-group >
-input[type="password"] + .app-searchbox-field, .input-group >
-input[type="datetime"] + .app-searchbox-field, .input-group >
-input[type="datetime-local"] + .app-searchbox-field, .input-group >
-input[type="date"] + .app-searchbox-field, .input-group >
-input[type="month"] + .app-searchbox-field, .input-group >
-input[type="time"] + .app-searchbox-field, .input-group >
-input[type="week"] + .app-searchbox-field, .input-group >
-input[type="number"] + .app-searchbox-field, .input-group >
-input[type="email"] + .app-searchbox-field, .input-group >
-input[type="url"] + .app-searchbox-field, .input-group >
-input[type="search"] + .app-searchbox-field, .input-group >
-input[type="tel"] + .app-searchbox-field, .input-group >
-input[type="color"] + .app-searchbox-field, .input-group > .app-searchbox-field + .app-searchbox-field,
+input[type="color"],
 .input-group > .form-control + .custom-select,
 .input-group > select + .custom-select,
 .input-group >
@@ -8461,7 +8429,6 @@ input[type="search"] + .custom-select,
 input[type="tel"] + .custom-select,
 .input-group >
 input[type="color"] + .custom-select,
-.input-group > .app-searchbox-field + .custom-select,
 .input-group > .form-control + .custom-file,
 .input-group > select + .custom-file,
 .input-group >
@@ -8494,7 +8461,6 @@ input[type="search"] + .custom-file,
 input[type="tel"] + .custom-file,
 .input-group >
 input[type="color"] + .custom-file,
-.input-group > .app-searchbox-field + .custom-file,
 .input-group > .custom-select + .form-control,
 .input-group > .custom-select + select,
 .input-group > .custom-select +
@@ -8527,7 +8493,6 @@ input[type="search"],
 input[type="tel"],
 .input-group > .custom-select +
 input[type="color"],
-.input-group > .custom-select + .app-searchbox-field,
 .input-group > .custom-select + .custom-select,
 .input-group > .custom-select + .custom-file,
 .input-group > .custom-file + .form-control,
@@ -8562,7 +8527,6 @@ input[type="search"],
 input[type="tel"],
 .input-group > .custom-file +
 input[type="color"],
-.input-group > .custom-file + .app-searchbox-field,
 .input-group > .custom-file + .custom-select,
 .input-group > .custom-file + .custom-file {
   margin-left: -1px;
@@ -8583,7 +8547,7 @@ input[type="email"]:focus, .input-group >
 input[type="url"]:focus, .input-group >
 input[type="search"]:focus, .input-group >
 input[type="tel"]:focus, .input-group >
-input[type="color"]:focus, .input-group > .app-searchbox-field:focus,
+input[type="color"]:focus,
 .input-group > .custom-select:focus,
 .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
   z-index: 3;
@@ -13729,7 +13693,7 @@ img[data-sizes="auto"] {
   display: table-cell;
 }
 
-.app-front-page-cards .app-card {
+.app-cards .app-card {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -13738,40 +13702,37 @@ img[data-sizes="auto"] {
   -ms-flex: 0 0 100%;
       flex: 0 0 100%;
   max-width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 @media (min-width: 576px) {
-  .app-front-page-cards .app-card {
-    -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
-    max-width: 25%;
+  .app-cards .app-card {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
-@media (min-width: 576px) {
-  .app-cards-page-previews .app-card {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-    max-width: 100%;
+@media (min-width: 768px) {
+  .app-cards .app-card {
+    -ms-flex: 0 0 33.3333333333%;
+        flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
   }
 }
 
 .app-card-gutter {
-  margin-right: -.5rem;
-  margin-left: -.5rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
-.app-page-cards .app-card-gutter {
-  margin-right: 0;
-  margin-left: 0;
+.app-card-gutter .app-card {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .app-card__header {
-  font-weight: 700;
-  padding: 1rem 0;
-  background: #fff;
+  padding: 0.75rem 1.25rem;
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .app-card__header::after {
@@ -13780,14 +13741,8 @@ img[data-sizes="auto"] {
   content: "";
 }
 
-.app-card__figure img {
-  width: 100%;
-}
-
 .app-card__main {
-  background: url(../assets/images/card-body.svg) no-repeat top center;
-  min-height: 10rem;
-  padding: 1rem;
+  padding: 0.75rem 1.25rem;
 }
 
 .app-card__main::after {
@@ -13796,37 +13751,8 @@ img[data-sizes="auto"] {
   content: "";
 }
 
-.app-nav-list .app-card__main {
-  background: transparent;
-  padding: 0;
-}
-
-.app-cards-page-previews .app-card__main {
-  background: transparent;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background: #e9ecef;
-}
-
-.template-overview-controlpanel .app-card__main {
-  background: #e9ecef;
-}
-
-@media (min-width: 576px) {
-  .app-card__main {
-    min-height: 9rem;
-  }
-}
-
-.app-card__title {
-  width: 100%;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  color: #fff;
-}
-
 .app-card__footer {
-  padding: 1rem 0;
+  padding: 0.75rem 1.25rem;
 }
 
 .app-card--level-2 {
@@ -14431,104 +14357,6 @@ img[data-sizes="auto"] {
   margin-left: 1rem;
 }
 
-.app-actionbar {
-  margin-bottom: 1rem;
-}
-
-.app-actions {
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 0.85rem;
-}
-
-.app-action {
-  -ms-flex: 1;
-      flex: 1;
-  padding: .25rem;
-  color: #fff;
-  background: #933389;
-  text-align: center;
-}
-
-.app-action:nth-child(even) {
-  color: #fff;
-  background: #ff0198;
-}
-
-.app-action-search {
-  -ms-flex: 1;
-      flex: 1;
-  color: #933389;
-  background: #edeaea;
-}
-
-.app-searchbox-group {
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.app-searchbox-control {
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.app-searchbox-field {
-  width: 66.6666%;
-  background-color: #edeaea;
-  border-color: #edeaea;
-}
-
-.app-searchbox-field::-webkit-input-placeholder {
-  color: #933389;
-  opacity: 1;
-}
-
-.app-searchbox-field:-ms-input-placeholder {
-  color: #933389;
-  opacity: 1;
-}
-
-.app-searchbox-field::placeholder {
-  color: #933389;
-  opacity: 1;
-}
-
-.app-searchbox-btn {
-  -ms-flex: 0 0 33.3333%;
-      flex: 0 0 33.3333%;
-  color: #212529;
-  background-color: #fff;
-  border-color: #ff0198;
-}
-
-.app-searchbox-btn:hover {
-  color: #fff;
-  background-color: #ff0198;
-  border-color: #cd007a;
-}
-
-.app-searchbox-btn:focus, .app-searchbox-btn.focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 1, 152, 0.5);
-}
-
-.app-searchbox-btn.disabled, .app-searchbox-btn:disabled {
-  color: #212529;
-  background-color: #fff;
-  border-color: #ff0198;
-}
-
-.app-searchbox-btn:not(:disabled):not(.disabled):active, .app-searchbox-btn:not(:disabled):not(.disabled).active,
-.show > .app-searchbox-btn.dropdown-toggle {
-  color: #212529;
-  background-color: #e6e6e6;
-  border-color: #c00072;
-}
-
-.app-searchbox-btn:not(:disabled):not(.disabled):active:focus, .app-searchbox-btn:not(:disabled):not(.disabled).active:focus,
-.show > .app-searchbox-btn.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 1, 152, 0.5);
-}
-
 .app-bannerbar {
   padding-top: 0;
   display: -ms-flexbox;
@@ -14987,6 +14815,62 @@ img[data-sizes="auto"] {
 
 .app-callout-warning .alert-link {
   color: #e6e6e6;
+}
+
+.portletSearch {
+  padding: .5rem;
+  background: #933389;
+}
+
+.portletSearch .portletHeader {
+  display: none;
+}
+
+.portletSearch .LSBox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.portletSearch .LSBox .searchField {
+  -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+  max-width: 75%;
+  background-color: #933389 !important;
+  color: #fff;
+  border-color: #fff;
+}
+
+.portletSearch .LSBox input::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+.portletSearch .LSBox input:-ms-input-placeholder {
+  color: #fff !important;
+}
+
+.portletSearch .LSBox input::placeholder {
+  color: #fff !important;
+}
+
+.portletSearch .LSBox .searchButton {
+  -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+  max-width: 25%;
+  font-size: .6rem;
+  background: #933389;
+  color: #fff;
+  border-color: #fff;
+  border-width: 1px 1px 1px 0;
+}
+
+.portletSearch .portletFooter {
+  display: none;
 }
 
 .app-cards-section {
@@ -16102,6 +15986,88 @@ article.vevent {
 
 #app-events .app-card .app-card__footer {
   display: none;
+}
+
+.actionMenu {
+  display: none;
+}
+
+.searchPage .input-group {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .searchPage .input-group {
+    display: none;
+  }
+}
+
+.searchResults {
+  padding-left: 1rem;
+}
+
+.searchResults > li {
+  border-bottom: 1px solid #ccc;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  list-style-position: outside;
+}
+
+.pat-livesearch {
+  min-width: 230px;
+  position: relative;
+}
+
+.pat-livesearch .livesearch-results {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 100;
+  border-right: 1px solid #64bee8;
+  border-bottom: 1px solid #64bee8;
+  border-left: 1px solid #64bee8;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 190, 232, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 190, 232, 0.6);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pat-livesearch .livesearch-results .results-summary {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pat-livesearch .livesearch-results li {
+  white-space: normal;
+  margin: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.pat-livesearch .livesearch-results li .title {
+  font-size: 1rem;
+}
+
+.pat-livesearch .livesearch-results li .description {
+  font-size: .8rem;
+}
+
+.pat-livesearch .livesearch-results li.load-more .next {
+  float: right;
+}
+
+.pat-livesearch .livesearch-results li.load-more .prev {
+  float: left;
+}
+
+.pat-livesearch .livesearch-results li.load-more .page {
+  text-align: center;
+}
+
+.pat-livesearch .livesearch-results li:hover, .pat-livesearch .livesearch-results li.selected {
+  background-color: #e6e4e4;
 }
 
 .app-wrapper {

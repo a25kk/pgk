@@ -474,7 +474,7 @@
             </div>
         </replace>
 
-        <!-- Portlets-->
+        <!-- Portlets
         <replace css:content=".portlet:not(.portletNavigationTree)">
             <div class="app-card">
                 <xsl:for-each css:select=".portlet > *">
@@ -492,7 +492,7 @@
                     </div>
                 </xsl:for-each>
             </div>
-        </replace>
+        </replace>-->
 
         <!-- Event listing for Frontpage -->
         <replace css:content-children="#portal-column-two > *"

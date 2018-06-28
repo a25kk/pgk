@@ -1,0 +1,39 @@
+.portletSearch {
+	padding: .5rem;
+	background: $app-primary;
+
+	.portletHeader {
+		display: none;
+	}
+
+	.LSBox {
+    	@include make-row();
+    	margin-left: 0;
+    	margin-right: 0;
+
+    .searchField {
+        @include make-col(9);
+        background-color: $app-primary !important;
+        color: #fff;
+        border-color: #fff;
+    	}
+
+    input::placeholder {
+  		color: #fff !important;
+	}
+
+    .searchButton {
+        @include make-col(3);
+        font-size: .6rem;
+        background: $app-primary;
+        color: #fff;
+        border-color: #fff;
+        border-width: 1px 1px 1px 0;
+    	}
+	}
+
+	.portletFooter {
+		display: none;
+	}
+}
+
