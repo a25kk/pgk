@@ -13,4 +13,32 @@
             layer="pgk.sitetheme.interfaces.IPgkSiteThemeLayer"
     />
 
+    <browser:page
+            for="Products.CMFCore.interfaces.IContentish"
+            name="content-listing-view"
+            class=".listing.ListingView"
+            template="listing.pt"
+            permission="zope2.View"
+            layer="pgk.sitetheme.interfaces.IPgkSiteThemeLayer"
+    />
+
+    <!-- Content page preview card -->
+    <browser:page
+            for="ade25.sitecontent.contentpage.IContentPage"
+            name="snippet-view"
+            class=".snippet.SnippetView"
+            template="snippet.pt"
+            permission="zope2.View"
+            layer="pgk.sitetheme.interfaces.IPgkSiteThemeLayer"
+    />
+
+    <browser:page
+            for="ade25.sitecontent.contentpage.IContentPage"
+            name="snippet-preview"
+            class=".snippet.SnippetPreview"
+            template="snippet-preview.pt"
+            permission="zope2.View"
+            layer="pgk.sitetheme.interfaces.IPgkSiteThemeLayer"
+    />
+
 </configure>
