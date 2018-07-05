@@ -6,7 +6,7 @@
 .app-nav-tree {
     display: none;
     background-color: transparent;
-    font-weight: 500;
+    font-weight: 700;
     @include media-breakpoint-up(lg) {
         display: block;
     }
@@ -45,6 +45,7 @@
 .app-nav__list-link {
     color: #000;
     line-height: 2rem;
+    font-size: 1.1rem;
     &:hover {
         color: darken($app-primary, 10%);
     }
@@ -79,4 +80,8 @@
 
 .app-nav__list--level-2 {
     //border: 1px solid red;
+}
+
+.contenttype-plone-site {
+    display: none;
 }

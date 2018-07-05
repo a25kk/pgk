@@ -35,10 +35,11 @@
 }
 
 .app-aside-right {
+  padding: 1rem;
     @include media-breakpoint-up(lg) {
         @include make-col(3);
         display: block;
-        padding: 0 1rem;
+        padding: 0;
     }
 }
 

@@ -6,9 +6,9 @@
 //== Colors
 //
 //## Brand colors used across the project
-$color-plum:               rgba(147, 51, 137, 1) !default; // #933389
+$color-plum:					rgba(147, 51, 137, 1) !default; // #933389
 
-$color-powderblue:              rgba(255, 1, 152, 1) !default; // #B0E0E6
+$color-golden-grass:            rgba(255, 174, 28, 1) !default; // #e1ae1c
 
 $color-firebrick:               rgba(255, 1, 152, 1) !default; // #8b0000
 
@@ -31,10 +31,10 @@ $app-primary-light:             lighten($app-primary-base, 7.5%) !default;
 $app-primary-lighter:           lighten($app-primary-base, 15%) !default;
 
 //** Secondary brand color
-$app-secondary-base:              $color-powderblue !default;
+$app-secondary-base:              $color-golden-grass !default;
 $app-secondary-darker:            darken($app-secondary-base, 15%)  !default;
 $app-secondary-dark:              darken($app-secondary-base, 7.5%) !default;
-$app-secondary:                   $app-secondary-base               !default; // #588c73
+$app-secondary:                   $app-secondary-base               !default; // #e1ae1c
 $app-secondary-light:             lighten($app-secondary-base, 7.5%) !default;
 $app-secondary-lighter:           lighten($app-secondary-base, 15%) !default;
 

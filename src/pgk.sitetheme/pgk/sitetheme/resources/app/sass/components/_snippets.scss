@@ -31,7 +31,10 @@
     }
     @include when-inside('.app-snippet') {
         @include make-col-ready();
-        padding: 0 1rem 0 0;
+        padding: 1rem;
+        @include media-breakpoint-up(md) {
+            padding: 0 1rem 0 0;
+        }
     }
 }
 

@@ -27,14 +27,17 @@
 .app-action-search {
   flex: 1;
   color: $app-primary;
-  background: $app-gray;
+  background: #fff;
 }
 
 .app-searchbox-group {
   display: flex;
-  padding: 0 0 0 .2rem;
+  padding: 0;
   background-color: #fff;
   @include make-row();
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 }
 
 .app-searchbox-control {
@@ -64,5 +67,5 @@
     @include media-breakpoint-up(md) {
     @include make-col(3);
     }
-  @include button-variant(#fff, $app-primary, $app-primary);
+  @include button-variant(#fff, $app-secondary, $app-secondary);
 }

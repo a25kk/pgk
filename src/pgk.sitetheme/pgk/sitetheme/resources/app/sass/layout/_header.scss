@@ -71,6 +71,7 @@
         @include make-col(12);
         @include media-breakpoint-up(md) {
         @include make-col(9);
+        padding-right: 1rem;
         }
     }
 

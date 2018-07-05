@@ -12,8 +12,8 @@
         <section class="app-listing-page" id="app-listing-page">
 
           <div class="app-page-header">
-            <div class="app-page-title">
-                <h1 class="app-page-headline" tal:content="context/Title">
+            <div class="app-page__title">
+                <h1 class="app-page__headline" tal:content="context/Title">
                     Heading
                 </h1>
             </div>
