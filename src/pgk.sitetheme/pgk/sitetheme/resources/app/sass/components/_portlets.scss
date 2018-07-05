@@ -37,3 +37,30 @@
 	}
 }
 
+.portletHeader {
+    font-size: 1rem;
+    color: $app-primary;
+    margin-bottom: 2rem;
+    @include media-breakpoint-up(md) {
+    font-size: 1.2rem;
+  }
+}
+
+.portletContent {
+    padding-left: 0;
+} 
+
+.portletItem {
+    //border: 1px solid red;
+    list-style: none;
+    background: $gray-100;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+
+    .thumb-icon {
+        display: none;
+    }
+
+}
+

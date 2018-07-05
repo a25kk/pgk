@@ -1,10 +1,8 @@
 .app-page {
-  background: #fff;
-  @include make-container();
-  @include make-container-max-widths();
-    @include media-breakpoint-up(sm) {
-        margin-bottom: 2rem;
-        //padding: 2rem;
+    background: #fff;
+    padding: 1rem;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 2rem;   
     }
 }
 
@@ -13,19 +11,19 @@
 //## Define content specific styles
 .app-page__header {
     margin: 0;
-    //border-bottom: 1px solid gray('400');
 }
 
 .app-page__title,
 .app-page-title,
 .app-page__headline,
-.app-page-headline, {
-    text-transform: uppercase;
-    font-size: 1.5rem;
+.app-page-headline,
+.headline {
+    //text-transform: uppercase;
+    font-size: 1rem;
     color: $app-primary;
     margin-bottom: 2rem;
     @include media-breakpoint-up(md) {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -34,20 +32,20 @@
 // that has proper line-height on all media types
 .app-page-lead,
 .app-page__abstract {
-  margin-bottom: $spacer;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.5;
-  background: $gray-100;
-  padding: 1rem;
-  @include when-inside('.template-frontpage-view') {
-    background: transparent;
-    padding: 0;
-    margin-bottom: 2rem;
-  }
-  @include media-breakpoint-up(sm) {
+    margin-bottom: $spacer;
     font-size: 1rem;
-  }
+    font-weight: 300;
+    line-height: 1.5;
+    background: $gray-100;
+    padding: 1rem;
+    @include when-inside('.template-frontpage-view') {
+        background: transparent;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    @include media-breakpoint-up(sm) {
+        font-size: 1rem;
+    }
 }
 
 
@@ -55,7 +53,7 @@
 //
 //## Container providing visual separation
 .app-page-section {
-  margin: 1rem 0 2rem;
+    margin: 1rem 0 2rem;
 }
 
 
@@ -68,7 +66,11 @@
 // or the tinymce configuration
 .app-img {
 	@extend .img-fluid;
-  width: 100%;
+    width: 100%;
+}
+
+.app-page__figure {
+    margin-bottom: 0;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -80,28 +82,28 @@
 }
 
 .h2, h2 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .h3, h3 {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 .app-page-text {
-  a {
-    font-weight: 500;
-  }
-  ul {
-    padding-left: 0;
-    list-style-position: inside;
-  }
+    a {
+        font-weight: 500;
+    }
+    ul {
+        padding-left: 0;
+        list-style-position: inside;
+    }
 }
 
 // DEPRECATED
 // Should be replaced with the more generic
 // .app-page-embed class
 .embed-responsive {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 // Basic grid
@@ -137,4 +139,10 @@ $grid-item-sizes: (
             }
         }
     }
+}
+
+.item {
+    background-color: $gray-100;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }

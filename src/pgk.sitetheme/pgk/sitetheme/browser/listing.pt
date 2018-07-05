@@ -11,6 +11,13 @@
     <metal:content-core define-macro="main">
         <section class="app-listing-page" id="app-listing-page">
 
+          <div class="app-page-header">
+            <div class="app-page-title">
+                <h1 class="app-page-headline" tal:content="context/Title">
+                    Heading
+                </h1>
+            </div>
+          </div>
             <div class="app-page-body app-page__teasers" id="app-page-listing">
                 <tal:block tal:condition="view/has_previews">
                     <div class="app-teaser__snippets" tal:define="preview_snippets python:view.snippets()">

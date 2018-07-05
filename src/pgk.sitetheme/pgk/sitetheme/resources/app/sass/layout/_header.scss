@@ -69,15 +69,17 @@
     }
     &.app-header-brandbar {
         @include make-col(12);
+        @include media-breakpoint-up(md) {
+        @include make-col(9);
+        }
     }
 
-    &.app-header-bannerbar {
+    &.app-header-actionbar {
+        display: none;
+        @include make-col(12);
         @include media-breakpoint-up(md) {
             display: block;
-            @include make-col(8);
-            @include when-inside('.template-frontpage-view') {
-                @include make-col(8);
-            }
+            @include make-col(3);
         }
     }
 
