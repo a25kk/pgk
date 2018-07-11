@@ -10,11 +10,11 @@
         @include media-breakpoint-up(sm) {
             height: 320px;
         }
-        @include media-breakpoint-up(md) {
-            height: 540px;
-        }
         @include media-breakpoint-up(lg) {
-            height: 641px;
+            height: 496px;
+        }
+        @include media-breakpoint-up(xl) {
+            height: 606px;
         }
         .flickity-page-dots {
             display: none;
@@ -45,14 +45,15 @@
         @include media-breakpoint-up(sm) {
             height: 320px;
         }
-        @include media-breakpoint-up(md) {
-            height: 540px;
-        }
         @include media-breakpoint-up(lg) {
-            height: 641px;
+            height: 496px;
+        }
+        @include media-breakpoint-up(xl) {
+            height: 606px;
         }
         img {
             width: 100%;
+            border: 1px solid $gray-300;
         }
 }
 

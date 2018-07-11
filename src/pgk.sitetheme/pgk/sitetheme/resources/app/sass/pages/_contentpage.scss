@@ -170,6 +170,11 @@ $grid-item-sizes: (
     background-color: $gray-100;
     padding: 1rem;
     margin-bottom: 1rem;
+    @include when-inside('.flickity-slider') {
+        padding: 0;
+        background: #fff;
+    }
+
 
     .more {
         margin-top: 1rem;

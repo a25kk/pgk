@@ -14513,7 +14513,7 @@ img[data-sizes="auto"] {
 .app-nav__list-link {
   color: #000;
   line-height: 2rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .app-nav__list-link:hover {
@@ -14949,15 +14949,15 @@ img[data-sizes="auto"] {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .app-gallery {
-    height: 540px;
+    height: 496px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .app-gallery {
-    height: 641px;
+    height: 606px;
   }
 }
 
@@ -14997,20 +14997,21 @@ img[data-sizes="auto"] {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .app-gallery-cell {
-    height: 540px;
+    height: 496px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .app-gallery-cell {
-    height: 641px;
+    height: 606px;
   }
 }
 
 .app-gallery-cell img {
   width: 100%;
+  border: 1px solid #dee2e6;
 }
 
 /* ---- flickity overrides ---- */
@@ -15810,6 +15811,11 @@ img[data-sizes="auto"] {
   background-color: #f8f9fa;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+
+.flickity-slider .item {
+  padding: 0;
+  background: #fff;
 }
 
 .item .more {
