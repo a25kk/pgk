@@ -47,7 +47,7 @@
 .app-content--main {
   padding: 0;
   @include media-breakpoint-up(lg) {
-      @include make-col(6);
+      @include make-col(9);
     }
 }
 

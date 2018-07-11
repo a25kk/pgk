@@ -14129,8 +14129,8 @@ img[data-sizes="auto"] {
 .app-brandname {
   margin-top: 0;
   display: block;
-  padding: .7rem 1rem;
-  font-size: .8rem;
+  padding: .45rem 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.25;
   color: #fff;
@@ -15211,6 +15211,7 @@ img[data-sizes="auto"] {
   .portletHeader {
     font-size: 1.4rem;
     line-height: 1.4;
+    margin-top: 1rem;
     margin-bottom: 1rem;
   }
 }
@@ -16527,9 +16528,9 @@ article.vevent {
 @media (min-width: 992px) {
   .app-content-main,
   .app-content--main {
-    -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-    max-width: 50%;
+    -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+    max-width: 75%;
   }
 }
 
