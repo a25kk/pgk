@@ -115,7 +115,7 @@
     right: -100%;
     @include media-breakpoint-up(lg) {
         right: 0;
-        display: none;
+        //display: none;
     }
 }
 
@@ -157,7 +157,7 @@
     text-transform: none;
     font-weight: 700;
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 1rem;
     @include media-breakpoint-up(md) {
         text-transform: uppercase;
         padding: 1rem .5rem;
@@ -173,14 +173,14 @@
     }
     @include when-inside('.app-nav--level-1') {
         &:after {
-            display: none;
+            //display: none;
         }
     }
     @include media-breakpoint-up(lg) {
         color: #000;
         line-height: 1rem;
         &:after {
-            display: none;
+            //display: none;
         }
     }
 }
@@ -200,11 +200,11 @@
     display: inline-block;
     width: 100%;
     padding: 1rem;
-    &:after {
-        content: "▾";
-        padding-left: .5rem;
-        font-size: 1rem;
-        }
+    //&:after {
+    //    content: "▾";
+    //    padding-left: .5rem;
+    //    font-size: 1rem;
+    //    }
         @include when-inside('.app-nav__link--has-icon') {
             display: block;
         @include media-breakpoint-up(lg) {

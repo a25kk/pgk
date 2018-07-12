@@ -2,7 +2,8 @@
     background: #fff;
     padding: 0 1rem;
     @include media-breakpoint-up(md) {
-        margin-bottom: 2rem;   
+        margin-bottom: 2rem;
+        padding: 0 0 0 1rem; 
     }
 }
 
