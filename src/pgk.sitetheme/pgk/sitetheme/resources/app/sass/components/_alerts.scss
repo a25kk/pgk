@@ -4,10 +4,10 @@
 
 
 .app-alert {
-    @include make-container();
-    @include make-container-max-widths();
+    //@include make-container();
+    //@include make-container-max-widths();
     padding: 0.5rem 1rem 1rem;
-    margin: $spacer auto;
+    margin: 1rem 0 1rem 1rem;
     border-left: 5px solid #eee;
     @include when-inside('.app-page-content') {
     display: none;

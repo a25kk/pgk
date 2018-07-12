@@ -13615,38 +13615,9 @@ img[data-sizes="auto"] {
 }
 
 .app-alert {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
   padding: 0.5rem 1rem 1rem;
-  margin: 1rem auto;
+  margin: 1rem 0 1rem 1rem;
   border-left: 5px solid #eee;
-}
-
-@media (min-width: 576px) {
-  .app-alert {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .app-alert {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .app-alert {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .app-alert {
-    max-width: 1140px;
-  }
 }
 
 .app-page-content .app-alert {
