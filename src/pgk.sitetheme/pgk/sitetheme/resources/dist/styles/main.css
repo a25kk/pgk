@@ -14176,6 +14176,7 @@ img[data-sizes="auto"] {
   background-color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25), 0 0.65rem 0.65rem rgba(0, 0, 0, 0.22);
   transition: right .5s linear;
+  overflow-y: scroll;
 }
 
 @media (min-width: 768px) {
