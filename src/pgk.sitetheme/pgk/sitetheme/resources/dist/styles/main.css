@@ -14101,7 +14101,7 @@ img[data-sizes="auto"] {
   margin-top: 0;
   display: block;
   padding: .45rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.25;
   color: #fff;
@@ -14113,6 +14113,7 @@ img[data-sizes="auto"] {
 @media (min-width: 576px) {
   .app-brandname {
     margin-top: 1rem;
+    font-size: 1.2rem;
   }
 }
 
